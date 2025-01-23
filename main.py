@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 
 ## extract
 def extract_commits(since):
-    url = f"https://api.github.com/repos/apache/airflow/commits"  #changes to one the file
+    url = f"https://api.github.com/repos/apache/airflow/commits"  #changes to the file
     params = {'since': since, 'per_page': 100}
     all_commits = []
     page = 1
